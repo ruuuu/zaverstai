@@ -170,7 +170,7 @@
             <section class="portfolio">
                 <div class="container"><!--блок-центровщик-->
                     <h3 class="section-title">Портфолио</h3>
-                    
+
                     <ul class="portfolio__list"><!-- флекс контенйер-->
                         <li class="portfolio__item"><!-- флекс элемент-->
                             <img class="portfolio__image" src="img/portfolio1.png" width="387" height="525" alt="portfolio_photo1">
@@ -183,7 +183,7 @@
                             </div>
                         </li>
 
-                        <li class="portfolio__item"><!-- флекс элемент-->
+                        <li class="portfolio__item portfolio__item--center"><!-- флекс элемент-->
                             <img class="portfolio__image" src="img/portfolio2.png" width="387" height="525" alt="portfolio_photo2">
                             <div class="portfolio__content">
                                 <p class="portfolio__name">Журнал «LNK»</p>
@@ -206,34 +206,41 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="button" type="button">Показать еще</button>
+                    <div class="button-wrapper">
+                        <button class="button show-more" type="submit">Показать еще</button>
+                    </div>
                 </div>
             </section> 
 
-            <section class="feedback-form">
-                <div class="container"><!--блок-центровщик padding-left/right:120px-->
-                    <div class="feedback-form__content">
-                        <p class="feedback-form__input-wrapper">
-                            <label for="name">Ваше имя</label>
-                            <input class="feedback-form__input" type="text"  name="name" id="name">
-                        </p>
-                        <p class="feedback-form__input-wrapper">
-                            <label for="email">Email</label>
-                            <input class="feedback-form__input" type="email" name="email" id="email">
-                        </p>
-                        <p class="feedback-form__input-wrapper">
-                            <label for="sms">Сообщение</label>
-                            <textarea class="feedback-form__textarea" type="text" name="sms" id="sms">
-                                </p>
-                    </div>
-                    <button class="button feedback-form__button">Отправить</button>
+            <section class="feedback-form-section">
+                <div class="container"><!--блок-центровщик и флекс контейнер-->
+                    <form class="feedback-form" action="">
+                        <div class="feedback-form__content">
+                            <p class="feedback-form__input-wrapper width-half">
+                                <label for="name">Ваше имя</label>
+                                <input class="feedback-form__input" type="text"  name="name" id="name" placeholder="Иван Иванов">
+                            </p>
+                            <p class="feedback-form__input-wrapper width-half">
+                                <label for="email">Email</label>
+                                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="google@gmail.com">
+                            </p>
+                            <p class="feedback-form__input-wrapper width-full">
+                                <label for="sms">Сообщение</label>
+                                <textarea class="feedback-form__textarea" type="text" name="sms" id="sms" placeholder="Напишите здесь ваше сообщение"></textarea>
+                            </p>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="button show-more" type="submit">Отправить</button>
+                        </div>
+                        
+                    </form>
                 </div>
             </section>
         </main>
 
         <footer class="main-footer">
             <div class="container"><!--блок-центровщик -->
-                <div class="main-footer__wrapper">
+                <div clss="main-footer__wrapper">
                     <ul class="main-footer__nav"><!-- флекс контенйр-->
                         <li class="nav-item">
                             <a class="nav-item-link" href="">ВК</a>
@@ -252,6 +259,4 @@
             </div>
         </footer>
     </body>
-
-
 </html>
