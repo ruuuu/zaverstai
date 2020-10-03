@@ -13,9 +13,9 @@
     <body class="promo-arcticle">
         <header class="main-header"> <!--шапка -->
             <div class="container"><!-- блок-центровщик-->
-                <div class="main-header__wrapper"><!-- флекс конетнйер-->
+                <div class="main-header__wrapper"><!--флекс конетнйер-->
 
-                    <a class="main-header-logo"><!-- флекс элемент-->
+                    <a class="main-header-logo" href="index.html"><!-- флекс элемент-->
                         <img class="logo" src="img/logo.svg" width="130" height="83" alt="logo">
                     </a>
 
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="article-text__soceti"><!--флекс контенйер-->
-                        <div class="counter-wrapper"><!-- флекс элемент-->
+                        <div class="counter-wrapper"><!-- флексэлемент-->
                             <button class="heart" type="button">
                                 <span class="likes-number">13</span>
                             </button>
@@ -118,12 +118,12 @@
                         </ul>
                     </div>
 
-                    <form action="https://echo.htmlacademy.ru/courses" method="post" class="feedback-form-article">
+                    <form action = "http://127.0.0.1:65195/aticle.html" method="post" class="feedback-form-article">
                         <p class="feedback-form-article__title">Оставить комментарий</p>
                         <div class="feedback-form-article__wrapper"><!--флекс контенер--> 
                             <div class="feedback-form__content-article"><!-- флекс элемент-->
                                 <p class="feedback-form__input-article-wrapper">
-                                    <label for="name"></label><!-- for у label жолен совпадать с id у input -->
+                                    <label for="name"></label><!-- for у label жолен совпадать с id у input-->
                                     <input class="feedback-form__input-article" type="text" id="name" name="name" placeholder="Имя">
                                 </p>
                                 <p class="feedback-form__input-article-wrapper">
@@ -138,11 +138,6 @@
                     </form>
                 </div>
             </section>
-
-
-
-
-
         </main>
 
         <footer class="main-footer">
@@ -165,5 +160,7 @@
                 </div>
             </div>
         </footer>
+        <script src="like.js"></script>
+        <script src="comment.js"></script>
     </body>
 </html>
