@@ -430,15 +430,37 @@ p {
 }
 
 
+.show-more:hover{
+    border: 2px solid #1576e5;
+}
+
+
+.show-more:active{
+    border: 2px solid #4e8acf;
+    outline: none;
+}
+
+
+.show-more:disabled{/*задизейбленная кнопка*/
+    background-color: red;
+    
+}
+
+
 .feedback-form-section .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 
-.feedback-form{
+.feedback-form-section .section-title{
+    margin-bottom: 60px;
+}
 
+
+.feedback-form{
     width: 837px;
     padding-left: 79px;
     padding-right: 79px;
@@ -510,6 +532,18 @@ p {
 }
 
 
+.feedback-form__input:hover{
+    border: 2px solid #1576e5;
+}
+
+
+.feedback-form__input:active{
+    border: 2px solid #4e8acf;
+    outline: none;
+}
+
+
+
 .feedback-form__input::placeholder,
 .feedback-form__textarea::placeholder{/*стили для пелйсхрлднра*/
     color: rgba(32,33,23,1);
@@ -535,6 +569,15 @@ p {
 }
 
 
+.feedback-form__textarea:hover{
+    border: 2px solid #1576e5;
+}
+
+
+.feedback-form__textarea:active{
+    border: 2px solid #4e8acf;
+    outline: none;
+}
 
 .main-footer{
     background-color: #D7D1C9;
@@ -863,6 +906,18 @@ p {
 }
 
 
+.feedback-form__input-article:hover{/*наволим на поле*/
+    border-bottom: 2px solid #0d4482;
+}
+
+
+.feedback-form__input-article:active{/*фокус  в поле ставим*/
+    border-bottom: 2px solid #1576e5;
+    outline: none;
+}
+
+
+
 .feedback-form__input::placeholder{/*стили дял плейсхрлдра*/
     font-family: "Open Sans", "Arial", sans-serif; 
     font-weight: 400;
@@ -879,6 +934,25 @@ p {
 }
 
 
+.submit-button-article:hover{/*наведение на кнпоку*/
+    border: 2px solid #5f7fa3;
+    color: #5f7fa3;
+}
+
+
+.submit-button-article:active{/*нажатие на кнпоку*/
+    border: 2px solid #87bdfa;
+    color: #87bdfa;
+    outline: none; /* чтобы пр надатии на кнпоку, свои сили не вылезали*/
+}
+
+
+.submit-button-article:disabled{/*для задизейбленнок кнпоки*/
+    background-color: red;
+    
+}
+
+
 .feedback-form__textarea-atcicle{/*textarea*/
     width: 406px;
     height: 208px;
@@ -887,6 +961,18 @@ p {
     box-sizing: border-box;/*паддинги включаются в width*/
     border-radius: 10px;
     resize: none;/*чтобы не ляьзя юыло курами изменить размры*/
+    border-color: transparent;
+}
+
+
+.feedback-form__textarea-atcicle:hover{/*наведенеи на текстарию*/
+    border: 2px solid #5f7fa3;
+}
+
+
+.feedback-form__textarea-atcicle:active{/*нажатеи  на текстарию*/
+    border: 2px solid #87bdfa;
+    outline: none; /* чтобы пр надатии на кнпоку, свои сили не вылезали*/
 }
 
 
@@ -899,14 +985,19 @@ p {
 }
 
 
-.added{
-
+.added{/*чтобы кнопка лайк окрасилась*/
     background-image: url("./img/likeadd.svg");
 }
 
 
+.warning{ /*класс дял выделения если в текстариювводят больше 20 символов*/
+    border: 2px solid red;
+    
+}
+
+
 .filter{
-    display: flex;
+    position: relative;
     padding: 7px 12px 7px 12px;
     box-sizing: border-box;
     background-color: #D7D1C9;
@@ -916,12 +1007,15 @@ p {
 }
 
 
-.filter::after{
+.filter::before{
     content: "";
+    position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
+    
     width: 16px;
     height: 14px;
     background-image: url("./img/Polygon.svg");
     background-size: 16px 14px;
+    background-position: center right;
 }

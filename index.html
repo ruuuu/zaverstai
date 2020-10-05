@@ -46,7 +46,7 @@
                         <h3 class="section-title">Все статьи</h3>
 
                         <select class="filter" name="news-filter">
-                            <option value="travalls">Путешествия</option>
+                            <option value="travalls">Путешествия</option><!-- значниее value отправляется на сервер-->
                             <option value="cities">Город</option>
                             <option value="books">Книги</option>
                             <option value="photos">Фотографии</option>
@@ -224,19 +224,20 @@
 
             <section class="feedback-form-section">
                 <div class="container"><!--блок-центровщик и флекс контейнер-->
+                    <h3 class="section-title">Написать мне</h3>
                     <form class="feedback-form" action="">
                         <div class="feedback-form__content">
                             <p class="feedback-form__input-wrapper width-half">
-                                <label for="name">Ваше имя</label>
-                                <input class="feedback-form__input" type="text"  name="name" id="name" placeholder="Иван Иванов">
+                                <label for="name">Ваше имя</label><!-- у input id долен совпададть с for у label-->
+                                <input class="feedback-form__input" type="text"  name="name" id="name" placeholder="Иван Иванов" required>
                             </p>
                             <p class="feedback-form__input-wrapper width-half">
                                 <label for="email">Email</label>
-                                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="google@gmail.com">
+                                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="google@gmail.com" required>
                             </p>
                             <p class="feedback-form__input-wrapper width-full">
                                 <label for="sms">Сообщение</label>
-                                <textarea class="feedback-form__textarea" type="text" name="sms" id="sms" placeholder="Напишите здесь ваше сообщение"></textarea>
+                                <textarea class="feedback-form__textarea" type="text" name="sms" id="sms" placeholder="Напишите здесь ваше сообщение" required></textarea>
                             </p>
                         </div>
                         <div class="button-wrapper">
@@ -268,5 +269,6 @@
                 </div>
             </div>
         </footer>
+        <script src="form.js"></script>
     </body>
 </html>
