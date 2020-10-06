@@ -76,7 +76,7 @@ p {
 
 
 .container{
-    width: 1200px;/**/
+    max-width: 1200px;/*изм акета вязла*/
     margin: 0 auto;
     padding-left: 120px;
     padding-right: 120px; 

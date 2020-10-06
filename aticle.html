@@ -124,11 +124,11 @@
                             <div class="feedback-form__content-article"><!-- флекс элемент-->
                                 <p class="feedback-form__input-article-wrapper">
                                     <label for="name"></label><!-- for у label жолен совпадать с id у input-->
-                                    <input class="feedback-form__input-article" type="text" id="name" name="name" placeholder="Имя">
+                                    <input class="feedback-form__input-article" type="text" id="name" name="name" placeholder="Имя" minlength="10" maxlength="200" required autofocus>
                                 </p>
                                 <p class="feedback-form__input-article-wrapper">
                                     <label for="email"></label>
-                                    <input class="feedback-form__input-article" type="email" id="email" name="email" placeholder="Почта">
+                                    <input class="feedback-form__input-article" type="email" id="email" name="email" placeholder="Почта" minlength="10" maxlength="200" required autofocus>
                                 </p>
                                 <button class="button submit-button-article" type="submit">Отправить</button>
                             </div>

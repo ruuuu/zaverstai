@@ -229,15 +229,15 @@
                         <div class="feedback-form__content">
                             <p class="feedback-form__input-wrapper width-half">
                                 <label for="name">Ваше имя</label><!-- у input id долен совпададть с for у label-->
-                                <input class="feedback-form__input" type="text"  name="name" id="name" placeholder="Иван Иванов" required>
+                                <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Иван Иванов" minlength="10" maxlength="200" required autofocus>
                             </p>
                             <p class="feedback-form__input-wrapper width-half">
                                 <label for="email">Email</label>
-                                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="google@gmail.com" required>
+                                <input class="feedback-form__input" type="email" name="email" id="email"  placeholder="google@gmail.com" minlength="10" maxlength="200"  required autofocus autocomplete="on"><!-- pattern="[0-9]{3}@[A-Za-z].ru"-->
                             </p>
                             <p class="feedback-form__input-wrapper width-full">
                                 <label for="sms">Сообщение</label>
-                                <textarea class="feedback-form__textarea" type="text" name="sms" id="sms" placeholder="Напишите здесь ваше сообщение" required></textarea>
+                                <textarea class="feedback-form__textarea" type="text" name="sms" id="sms" placeholder="Напишите здесь ваше сообщение" required autofocus></textarea>
                             </p>
                         </div>
                         <div class="button-wrapper">
