@@ -22,16 +22,16 @@
                     <nav class="main-header-nav"><!--меню-->
                         <ul class="site-navigation">
                             <li class="site-navigation-item">
-                                <a class="link-item" href="#">Статьи</a>
+                                <a class="link-item" href="#article">Статьи</a>
                             </li>
                             <li class="site-navigation-item">
-                                <a class="link-item" href="#">Обо мне</a>
+                                <a class="link-item" href="#aboutme">Обо мне</a>
                             </li>
                             <li class="site-navigation-item">
-                                <a class="link-item" href="#">Портфолио</a>
+                                <a class="link-item" href="#portfolioo">Портфолио</a>
                             </li>
                             <li class="site-navigation-item">
-                                <a class="link-item" href="#">Написать мне</a>
+                                <a class="link-item" href="#writeme">Написать мне</a>
                             </li>
                         </ul>
                     </nav>
@@ -43,22 +43,21 @@
             <section class="all-arcticles">
                 <div class="container"><!--блок-центровщик-->
                     <div class="all-arcticles__header"><!--флекс контейнр-->
-                        <h3 class="section-title">Все статьи</h3>
+                        <h3 class="section-title" id="article">Все статьи</h3>
 
-                        <select class="filter" name="news-filter">
+                        <select class="filter" name="news-filter"><!-- выпадающий спсиок-->
                             <option value="travalls">Путешествия</option><!-- значниее value отправляется на сервер-->
                             <option value="cities">Город</option>
                             <option value="books">Книги</option>
                             <option value="photos">Фотографии</option>
                             <option value="receipts">Рецепты</option>
-                            <option value="all" selected>Выбрать тему</option>
-
+                            <option value="all" selected>Все</option>
                         </select>
                     </div>
 
                     <ul class="list-articles">
-                        <li class="article-item">
-                            <a href="">
+                        <li class="article-item" data-category="travalls"><!-- значение ata-category долна совпадать содним из значений value н option  выпадающго спсика-->
+                            <a href="aticle.html">
                                 <img class="article-item__image" src="img/article1.png" width="387" height="268" alt="article_photo1">
                                 <div class="article-item__info">
                                     <p class="article-item__title">Путешествие в Берлин в августе </p>
@@ -73,8 +72,8 @@
                             </a>
                         </li>
 
-                        <li class="article-item">
-                            <a href="">
+                        <li class="article-item" data-category="cities">
+                            <a href="aticle.html">
                                 <img class="article-item__image" src="img/article2.png" width="387" height="268" alt="article_photo2">
                                 <div class="article-item__info">
                                     <p class="article-item__title">Где выпить колдбрю в Москве</p>
@@ -90,8 +89,8 @@
                             </a>
                         </li>
 
-                        <li class="article-item">
-                            <a href="">
+                        <li class="article-item" data-category="books">
+                            <a href="aticle.html">
                                 <img class="article-item__image" src="img/article3.png" width="387" height="268" alt="article_photo2">
                                 <div class="article-item__info">
                                     <p class="article-item__title">Книжные рекомендации</p>
@@ -105,12 +104,62 @@
                                 </div>
                             </a>
                         </li>
+                        
+                        <li class="article-item" data-category="travalls"><!-- значение ata-category долна совпадать содним из значений value н option  выпадающго спсика-->
+                            <a href="aticle.html">
+                                <img class="article-item__image" src="img/article1.png" width="387" height="268" alt="article_photo1">
+                                <div class="article-item__info">
+                                    <p class="article-item__title">Путешествие в Берлин в августе </p>
+                                    <p class="article-item__description">
+                                        Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
+                                    </p>
+                                    <div class="article-item__date-tag">
+                                        <p class="article-item__tag">Теги: путешествия</p>
+                                        <p class="article-item__date">29.09.2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="article-item" data-category="books">
+                            <a href="aticle.html">
+                                <img class="article-item__image" src="img/article3.png" width="387" height="268" alt="article_photo2">
+                                <div class="article-item__info">
+                                    <p class="article-item__title">Книжные рекомендации</p>
+                                    <p class="article-item__description">
+                                        Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
+                                    </p>
+                                    <div class="article-item__date-tag">
+                                        <p class="article-item__tag">Теги: книги</p>
+                                        <p class="article-item__date">29.09.2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="article-item" data-category="cities">
+                            <a href="aticle.html">
+                                <img class="article-item__image" src="img/article2.png" width="387" height="268" alt="article_photo2">
+                                <div class="article-item__info">
+                                    <p class="article-item__title">Где выпить колдбрю в Москве</p>
+                                    <p class="article-item__description">
+                                        Собрала для вас список любимых кофеен,
+                                        где подают лучший летний напиток.
+                                    </p>
+                                    <div class="article-item__date-tag">
+                                        <p class="article-item__tag">Теги: город</p>
+                                        <p class="article-item__date">29.09.2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
                     </ul>                
 
-                    <ul class="list-articles-big"><!-- ЗДЕСТЬ ПРИВЕСИ В ПОРЧЯДОК КЛАССЫ-->
-                        <li class="articles-big-item">
+                    <ul class="list-articles-big">
+                       
+                        <li class="articles-big-item" data-category="photos">
                             <img class="articles-big-image" src="img/articke_big_photo1.png" width="590" height="552" alt="article_big_photo1">
-                            <div class="articles-big-info"><!--флекс контенйер-->
+                            <div class="article-item articles-big-info"><!--флекс контенйер-->
                                 <p class="articles-big-title">Снимки на плёнку </p>
                                 <p class="articles-big-description">
                                     Поделилась с вами весенними фотографиями, и секретами удачных снимков.
@@ -122,7 +171,7 @@
                             </div>
                         </li>
 
-                        <li class="articles-big-item">
+                        <li class="articles-big-item" data-category="receipts">
                             <img class="articles-big-image" src="img/article_bog_photo2.png" width="590" height="552" alt="article_big_photo2">
                             <div class="articles-big-info">
                                 <p class="articles-big-title">Домашний чизкейк </p>
@@ -137,21 +186,20 @@
                         </li>
                     </ul>
                     <div class="button-wrapper">
-                        <button class="button show-more" type="button">Показать еще</button>
+                        <a href="aticle.html" class="button show-more" type="button">Показать еще</a>
                     </div>
                 </div>
             </section>
 
             <section class="aboutme">
                 <div class="container"><!--блок-центровщик-->
-                    <h3 class="section-title">Обо мне</h3>
+                    <h3 class="section-title" id="aboutme">Обо мне</h3>
 
                     <div class="aboutme__wrapper"><!-- флекс клнтенйр-->
                         <div class="aboutme__wrapper-image"><!--флекс элемент -->
                             <img class="aboutme__image" src="img/about_me.png" width="590" height="693" alt="photo_about_me">
                         </div>
                         <div class="aboutme__wrapper-text"><!--флекс элемент -->
-
                             <p class="aboutme__textpart">Всем привет! Меня зовут Аня, и это мой личный блог.
                                 Здесь ты найдёшь рассказы о моих путешествиях, снимки
                                 на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
@@ -179,7 +227,7 @@
 
             <section class="portfolio">
                 <div class="container"><!--блок-центровщик-->
-                    <h3 class="section-title">Портфолио</h3>
+                    <h3 class="section-title" id="portfolioo">Портфолио</h3>
 
                     <ul class="portfolio__list"><!-- флекс контенйер-->
                         <li class="portfolio__item"><!-- флекс элемент-->
@@ -224,7 +272,7 @@
 
             <section class="feedback-form-section">
                 <div class="container"><!--блок-центровщик и флекс контейнер-->
-                    <h3 class="section-title">Написать мне</h3>
+                    <h3 class="section-title" id="writeme">Написать мне</h3>
                     <form class="feedback-form" action="">
                         <div class="feedback-form__content">
                             <p class="feedback-form__input-wrapper width-half">
@@ -269,6 +317,7 @@
                 </div>
             </div>
         </footer>
-        <script src="form.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/filter.js"></script>
     </body>
 </html>
