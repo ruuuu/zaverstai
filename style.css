@@ -132,16 +132,19 @@ p {
 
 .list-articles{
     width: 1200px;
-    display: flex;
+    /*display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-gap: 40px 20px;/*расстояние между  столбцами(20px) и рядами(40px)*/
+    grid-template-columns: repeat(3,1fr);/*3 столбца шириной 1fr*/
     margin-bottom: 62px;
 }
 
 
 .article-item{
-    margin-right: 19px;
-    margin-bottom: 40px;
+
+    /*margin-bottom: 40px;*/
 }
 
 
@@ -816,7 +819,7 @@ p {
 
 
 .feedbacks__author{
-    display: flex;/*чтоы позиционаорать фотку*/
+    display: flex;/*чтобы позиционаорать фотку*/
     align-items: center;
     margin-bottom: 20px;  
 
@@ -835,7 +838,7 @@ p {
 
 
 .feedbacks__text{/*флекс элемнет*/
-    margin-top: auto;/*флекс эелмнет придмется  книзу контейнера*/
+    margin-top: auto;/*флекс эелмнет прижмется  к низу контейнера*/
     font-weight: 400;
 }
 
@@ -963,7 +966,7 @@ p {
 
     box-sizing: border-box;/*паддинги включаются в width*/
     border-radius: 10px;
-    resize: none;/*чтобы не ляьзя юыло курами изменить размры*/
+    resize: none;/*чтобы не нельзя было руками изменить размры*/
     border-color: transparent;
 }
 
@@ -993,7 +996,7 @@ p {
 }
 
 
-.warning{ /*класс дял выделения если в текстариювводят больше 20 символов*/
+.warning{ /*класс для выделения если в текстарию вводят больше 20 символов*/
     border: 2px solid red;
 
 }
@@ -1013,28 +1016,42 @@ p {
     background-position: right 13px top 50%;/*спарва на 8 px и от верха по  центру*/
     background-size: 12px 14px;
     appearance: none;/*втроенный в выпадающий треугльничек убираем*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
 
 }
 
 .filter::-ms-expand {
-  display: none;
+    display: none;
 }
 
 .filter:focus {
-  outline-offset: 0;
+    outline-offset: 0;
+    outline: none;
+    outline-color: red;
+}
+
+
+.filter:hover{/*при наведении на список*/
+    background-color: rgba(215, 209, 201, 1);
+}
+
+.filter:active{/*при наведении на список*/
+    outline: none;
+    background-color: rgba(215, 209, 201, 1);
 }
 
 /*.filter::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 10px;
+content: "";
+position: absolute;
+top: 0;
+right: 10px;
 
-    width: 16px;
-    height: 14px;
-    background-image: url("./img/Polygon.svg");
-    background-size: 16px 14px;
-    background-position: center right;
+width: 16px;
+height: 14px;
+background-image: url("./img/Polygon.svg");
+background-size: 16px 14px;
+background-position: center right;
 }*/
 
 .highlight{
