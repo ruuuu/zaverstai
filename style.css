@@ -151,9 +151,10 @@ p {
 
 
 .article-item__image{
+    max-width: 100%;/*на слуй если размер иображения  больше чем  рзмер экрана*/
     display: block;
     width: 387px;
-    height: 268px;
+    height: auto;
     object-fit: cover;
     margin-bottom: 27px;
 }
@@ -211,8 +212,7 @@ p {
 .articles-big-item{/*li флекс элемент*/
     
     width: 590px;
-    display: flex;
-    flex-grow: 1;
+    
     position: relative;
     margin-right: 20px;
     color: #ffffff;

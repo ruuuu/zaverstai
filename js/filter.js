@@ -26,3 +26,21 @@ filter.onchange = function () {// обработчик списка select, ср
 
     //console.log(filter.value);//введет то, чо выберем из списка
 };
+
+
+
+filter.onchange = function () {// обработчик списка select, срабатывает, когда пользователь выбирает новое значение из выпадающего списка.
+    for (let article of articles) { //перебрать все элементы в коллекции articles
+
+        if(article.dataset.category !== filter.value && filter.value !== 'all'){//если категория  у текущего artcile  == выранному значению в спсике
+            article.classList.add('hidden');
+        }
+        else{
+            article.classList.remove('hidden');//для тех artcile   укотрых был класс hidden на предыдущих итерациях
+        }
+        
+    }
+
+
+    //console.log(filter.value);//введет то, чо выберем из списка
+};
