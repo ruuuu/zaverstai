@@ -16,7 +16,7 @@ body {
     background-image: url("./img/promo.png");
     background-repeat: no-repeat;
     background-position: top center;/*вверху по центру*/
-    background-size: 100% 581px;
+    background-size: 100% auto;
     height: 581px;
     margin: 0 auto;
 }
@@ -126,7 +126,7 @@ p {
 
 
 .all-arcticles{
-    padding-top: 580px;
+    padding-top: 80px;
 }
 
 
@@ -622,7 +622,7 @@ p {
 /*стили к article.html*/
 
 .artcile-text{
-    padding-top: 585px;
+    padding-top: 80px;
 }
 
 
