@@ -1,26 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    /*min-width: 1520px;*/
+    min-width: 1440px;
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #2E2F22;
     background-color: #E5E5E5;
+    
+    /*max-width: 1200px;*/
+}
+
+.main-header{
     background-image: url("./img/promo.png");
     background-repeat: no-repeat;
     background-position: top center;/*вверху по центру*/
     background-size: 100% 581px;
-    /*max-width: 1200px;*/
+    height: 581px;
+    margin: 0 auto;
 }
-
 
 .promo-arcticle{
     background-image: url("./img/prom-article.png");
     background-repeat: no-repeat;
     background-position: top center;/*вверху по центру*/
     background-size: 100% 589px;
+    height: 589px;
+    
 }
 
 
