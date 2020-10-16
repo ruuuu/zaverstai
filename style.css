@@ -7,9 +7,11 @@ body {
     font-size: 18px;
     line-height: 27px;
     color: #2E2F22;
-    background-color: #E5E5E5;
-    
-    /*max-width: 1200px;*/
+    background-color: #E5E5E5;   
+}
+
+img{
+    max-width: 100%;
 }
 
 .main-header{
@@ -52,6 +54,7 @@ p {
     margin: 0;
     padding: 0;
 }
+
 
 
 .button {
